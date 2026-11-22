@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes and Session Schedule — Weekly Timetable & Filters</title>
+  <meta name="description" content="View our weekly schedule of yoga classes, meditation sessions, functional fitness, and relaxation therapies with interactive day, category, and time filters.">
+  <link rel="canonical" href="https://example.com/schedule.html">
+
+  <meta property="og:title" content="Session Schedule — Wellness Center">
+  <meta property="og:description" content="Explore our weekly wellness schedule with interactive filters for day, discipline, time, and experience level.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/schedule.html">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand" aria-label="Wellness Center Homepage">
+        <svg class="brand-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2" stroke-opacity="0.3"/>
+          <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3" stroke-opacity="0.4"/>
+          <path d="M50 16 C50 36 68 50 68 50 C68 50 50 64 50 84 C50 64 32 50 32 50 C32 50 50 36 50 16Z" fill="#899B83" fill-opacity="0.2" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 50 C36 50 50 68 50 68 C50 68 64 50 84 50 C64 50 50 32 50 32 C50 32 36 50 16 50Z" fill="#D5C19B" fill-opacity="0.2" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="6" fill="#34483B"/>
+        </svg>
+        <div class="brand-info">
+          <span class="brand-title">WELLNESS CENTER</span>
+          <span class="brand-tagline">Restore Balance. Reconnect With Yourself.</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="wellness-services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm header-cta">Book Appointment</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="wellness-services.html" class="mobile-nav-link">Services</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+    <div style="margin-top: 2rem;">
+      <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book an Appointment</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="section section--tinted">
+      <div class="container">
+        <div class="section-header section-header--center reveal-item">
+          <span class="eyebrow">Weekly Calendar</span>
+          <h1>Classes and Session Schedule</h1>
+          <p class="lead">
+            Explore our curated weekly sessions designed to balance morning energy, midday restoration, and evening wind-down.
+          </p>
+        </div>
+
+        <div class="reveal-item">
+          <div class="placeholder-img ratio-21-9" style="max-height: 480px;" data-filename="schedule-hero.jpeg">
+            <img src="images/schedule-hero.jpeg" alt="Spacious sunlit yoga and meditation studio with natural timber floors" onerror="this.style.display='none';">
+            <div class="placeholder-overlay">
+              <span class="placeholder-badge">Schedule Hero Image</span>
+              <code class="placeholder-filename">schedule-hero.jpeg</code>
+              <span class="placeholder-dimensions">21:9 or 16:9 • 1920 × 820 px</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE DISCLAIMER -->
+    <div class="container" style="margin-top: 2.5rem;">
+      <div class="disclaimer-banner reveal-item">
+        ℹ️ <strong>Illustrative Demo Schedule:</strong> This timetable illustrates session formats, categories, and typical timings for demonstration purposes. Session capacity and actual studio scheduling will be confirmed directly upon consultation or booking enquiry. No payment or confirmed reservation is processed on this demo site.
+      </div>
+    </div>
+
+    <!-- TIMETABLE & INTERACTIVE FILTERS -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter Controls Container -->
+        <div class="reveal-item" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2.5rem;">
+
+          <!-- 1. Day Filter -->
+          <div class="filter-bar">
+            <span class="filter-group-label">Day:</span>
+            <button type="button" class="filter-btn active" data-filter-group="day" data-filter-value="all">All Days</button>
+            <button type="button" class="filter-btn" data-filter-group="day" data-filter-value="monday">Monday</button>
+            <button type="button" class="filter-btn" data-filter-group="day" data-filter-value="tuesday">Tuesday</button>
+            <button type="button" class="filter-btn" data-filter-group="day" data-filter-value="wednesday">Wednesday</button>
+            <button type="button" class="filter-btn" data-filter-group="day" data-filter-value="thursday">Thursday</button>
+            <button type="button" class="filter-btn" data-filter-group="day" data-filter-value="friday">Friday</button>
+            <button type="button" class="filter-btn" data-filter-group="day" data-filter-value="saturday">Saturday</button>
+          </div>
+
+          <!-- 2. Category Filter -->
+          <div class="filter-bar" style="background-color: var(--bg-tinted);">
+            <span class="filter-group-label">Category:</span>
+            <button type="button" class="filter-btn active" data-filter-group="category" data-filter-value="all">All Disciplines</button>
+            <button type="button" class="filter-btn" data-filter-group="category" data-filter-value="yoga">Yoga</button>
+            <button type="button" class="filter-btn" data-filter-group="category" data-filter-value="meditation">Meditation</button>
+            <button type="button" class="filter-btn" data-filter-group="category" data-filter-value="fitness">Fitness</button>
+            <button type="button" class="filter-btn" data-filter-group="category" data-filter-value="mindfulness">Mindfulness</button>
+            <button type="button" class="filter-btn" data-filter-group="category" data-filter-value="relaxation">Relaxation</button>
+          </div>
+
+          <!-- 3. Time of Day & Level Filters -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+            <div class="filter-bar" style="margin-bottom: 0;">
+              <span class="filter-group-label">Time:</span>
+              <button type="button" class="filter-btn active" data-filter-group="time" data-filter-value="all">All Times</button>
+              <button type="button" class="filter-btn" data-filter-group="time" data-filter-value="morning">Morning</button>
+              <button type="button" class="filter-btn" data-filter-group="time" data-filter-value="afternoon">Afternoon</button>
+              <button type="button" class="filter-btn" data-filter-group="time" data-filter-value="evening">Evening</button>
+            </div>
+
+            <div class="filter-bar" style="margin-bottom: 0;">
+              <span class="filter-group-label">Level:</span>
+              <button type="button" class="filter-btn active" data-filter-group="level" data-filter-value="all">All Levels</button>
+              <button type="button" class="filter-btn" data-filter-group="level" data-filter-value="beginner">Beginner</button>
+              <button type="button" class="filter-btn" data-filter-group="level" data-filter-value="intermediate">Intermediate</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Cards List -->
+        <div class="schedule-grid reveal-item">
+
+          <!-- Required Session 1: Gentle Yoga | Monday | 7:00 AM | 45 min -->
+          <article class="schedule-card" data-day="monday" data-category="yoga" data-time="morning" data-level="beginner">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Monday</span>
+              <span class="schedule-time">7:00 AM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">45 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Gentle Yoga</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Slow, unhurried joint lubrication, spine lengthening, and grounding breath to awaken natural vitality.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Yoga</span>
+              <span class="schedule-tag-pill">Beginner</span>
+              <span class="schedule-tag-pill">Morning</span>
+            </div>
+            <div>
+              <a href="booking.html?session=gentle-yoga-mon" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Required Session 2: Meditation | Tuesday | 6:00 PM | 30 min -->
+          <article class="schedule-card" data-day="tuesday" data-category="meditation" data-time="evening" data-level="beginner">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Tuesday</span>
+              <span class="schedule-time">6:00 PM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">30 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Guided Meditation</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Transition peacefully from workday mental noise into calm presence through guided breath awareness.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Meditation</span>
+              <span class="schedule-tag-pill">All Levels</span>
+              <span class="schedule-tag-pill">Evening</span>
+            </div>
+            <div>
+              <a href="booking.html?session=meditation-tue" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Required Session 3: Fitness Session | Wednesday | 7:00 AM | 45 min -->
+          <article class="schedule-card" data-day="wednesday" data-category="fitness" data-time="morning" data-level="all">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Wednesday</span>
+              <span class="schedule-time">7:00 AM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">45 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Functional Fitness Session</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Low-impact functional movement and core stability tailored to promote injury-free everyday strength.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Fitness</span>
+              <span class="schedule-tag-pill">All Levels</span>
+              <span class="schedule-tag-pill">Morning</span>
+            </div>
+            <div>
+              <a href="booking.html?session=fitness-wed" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Complementary Session: Midday Mobility | Wednesday 12:30 PM -->
+          <article class="schedule-card" data-day="wednesday" data-category="yoga" data-time="afternoon" data-level="all">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Wednesday</span>
+              <span class="schedule-time">12:30 PM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">40 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Midday Desk Mobility</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Targeted neck, thoracic, and hip decompression designed for mid-week posture reset.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Yoga</span>
+              <span class="schedule-tag-pill">Afternoon</span>
+              <span class="schedule-tag-pill">All Levels</span>
+            </div>
+            <div>
+              <a href="booking.html?session=mobility-wed" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Required Session 4: Mindfulness | Thursday | 6:00 PM | 30 min -->
+          <article class="schedule-card" data-day="thursday" data-category="mindfulness" data-time="evening" data-level="all">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Thursday</span>
+              <span class="schedule-time">6:00 PM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">30 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Mindfulness Practice</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Somatic grounding and non-judgmental awareness exercises to decompress cognitive fatigue.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Mindfulness</span>
+              <span class="schedule-tag-pill">All Levels</span>
+              <span class="schedule-tag-pill">Evening</span>
+            </div>
+            <div>
+              <a href="booking.html?session=mindfulness-thu" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Required Session 5: Relaxation Session | Friday | 5:30 PM | 45 min -->
+          <article class="schedule-card" data-day="friday" data-category="relaxation" data-time="evening" data-level="all">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Friday</span>
+              <span class="schedule-time">5:30 PM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">45 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Relaxation Session (Sound & Breath)</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Reclined acoustic sound bath, warm eye pillows, and extended exhalations to welcome the weekend.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Relaxation</span>
+              <span class="schedule-tag-pill">Evening</span>
+              <span class="schedule-tag-pill">All Levels</span>
+            </div>
+            <div>
+              <a href="booking.html?session=relaxation-fri" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Required Session 6: Group Yoga | Saturday | 8:00 AM | 60 min -->
+          <article class="schedule-card" data-day="saturday" data-category="yoga" data-time="morning" data-level="intermediate">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Saturday</span>
+              <span class="schedule-time">8:00 AM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">60 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Group Yoga Flow</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                An invigorating weekend breath-led flow connecting classical standing postures, gentle backbends, and quiet savasana.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Yoga</span>
+              <span class="schedule-tag-pill">Intermediate</span>
+              <span class="schedule-tag-pill">Morning</span>
+            </div>
+            <div>
+              <a href="booking.html?session=group-yoga-sat" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+          <!-- Complementary Session: Restorative Afternoon | Saturday 3:00 PM -->
+          <article class="schedule-card" data-day="saturday" data-category="relaxation" data-time="afternoon" data-level="beginner">
+            <div class="schedule-time-box">
+              <span class="schedule-day">Saturday</span>
+              <span class="schedule-time">3:00 PM</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">50 Minutes</span>
+            </div>
+            <div>
+              <h3 class="schedule-session-title">Weekend Restorative Surrender</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0; color: var(--text-secondary);">
+                Deep prop-supported relaxation postures to reset the parasympathetic nervous system.
+              </p>
+            </div>
+            <div>
+              <span class="schedule-tag-pill">Relaxation</span>
+              <span class="schedule-tag-pill">Afternoon</span>
+              <span class="schedule-tag-pill">Beginner</span>
+            </div>
+            <div>
+              <a href="booking.html?session=restorative-sat" class="btn btn-outline btn-sm" style="width: 100%;">Enquire</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty Filter State Notice (Managed by main.js) -->
+        <div class="schedule-empty-msg" style="display: none; text-align: center; padding: 3rem 1.5rem; background-color: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-medium); margin-top: 1.5rem;">
+          <h4 style="color: var(--accent-forest); margin-bottom: 0.5rem;">No sessions match your selected filter criteria.</h4>
+          <p style="margin-bottom: 1rem;">Try adjusting your day, discipline, or time filters to view more illustrative sessions.</p>
+          <button type="button" class="btn btn-primary btn-sm" onclick="location.reload();">Reset All Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="section section--beige">
+      <div class="container text-center reveal-item" style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <h2>Looking for Personalized Session Times?</h2>
+        <p>We also offer flexible individual private sessions tailored to your weekly routine.</p>
+        <div class="btn-group" style="justify-content: center; margin-top: 1.75rem;">
+          <a href="booking.html" class="btn btn-primary">Enquire for Session</a>
+          <a href="memberships.html" class="btn btn-outline">Explore Memberships</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid-4" style="gap: 3rem;">
+        <div style="grid-column: span 1;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <svg class="brand-symbol" style="color: var(--accent-champagne); width: 36px; height: 36px;" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2" stroke-opacity="0.5"/>
+              <path d="M50 16 C50 36 68 50 68 50 C68 50 50 64 50 84 C50 64 32 50 32 50 C32 50 50 36 50 16Z" fill="#D5C19B" fill-opacity="0.3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="50" cy="50" r="6" fill="#D5C19B"/>
+            </svg>
+            <span style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; letter-spacing: 0.1em; color: #fff;">WELLNESS CENTER</span>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75);">
+            A sanctuary dedicated to mindful living, holistic wellness, and inner harmony. Discover a balanced approach to lifestyle, movement, and calm.
+          </p>
+          <div style="font-size: 0.8rem; font-style: italic; color: var(--accent-champagne); margin-top: 1rem;">
+            "Restore Balance. Reconnect With Yourself."
+          </div>
+        </div>
+
+        <div>
+          <h5>Explore</h5>
+          <ul class="footer-nav-list">
+            <li><a href="about.html" class="footer-nav-link">About Us</a></li>
+            <li><a href="wellness-services.html" class="footer-nav-link">Wellness Services</a></li>
+            <li><a href="wellness-programs.html" class="footer-nav-link">Curated Programs</a></li>
+            <li><a href="schedule.html" class="footer-nav-link">Class Schedule</a></li>
+            <li><a href="memberships.html" class="footer-nav-link">Memberships & Packs</a></li>
+            <li><a href="workshops.html" class="footer-nav-link">Workshops & Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Disciplines</h5>
+          <ul class="footer-nav-list">
+            <li><a href="yoga.html" class="footer-nav-link">Yoga & Movement</a></li>
+            <li><a href="meditation.html" class="footer-nav-link">Meditation & Mindfulness</a></li>
+            <li><a href="nutrition.html" class="footer-nav-link">Nutrition & Healthy Living</a></li>
+            <li><a href="fitness.html" class="footer-nav-link">Fitness & Physical Wellness</a></li>
+            <li><a href="spa-therapies.html" class="footer-nav-link">Spa Therapies</a></li>
+            <li><a href="stress-management.html" class="footer-nav-link">Stress Management</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Sanctuary Info</h5>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>0000000000 / 0000000000</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Sat: 7:00 AM – 8:00 PM<br>Sun: Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2027 WELLNESS CENTER. All rights reserved. • Illustrative demo website.
+        </div>
+        <div>
+          General wellness services do not replace medical or psychological diagnosis.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

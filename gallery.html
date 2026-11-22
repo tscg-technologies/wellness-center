@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Wellness Spaces, Studios & Mindful Activities</title>
+  <meta name="description" content="Explore photos of our serene wellness spaces, mindful yoga studios, tranquil meditation halls, and organic relaxation environments.">
+  <link rel="canonical" href="https://example.com/gallery.html">
+
+  <meta property="og:title" content="Sanctuary Gallery — Wellness Center">
+  <meta property="og:description" content="Visual glimpses into our peaceful retreat interiors, organic gardens, yoga studios, and relaxation therapies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/gallery.html">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand" aria-label="Wellness Center Homepage">
+        <svg class="brand-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2" stroke-opacity="0.3"/>
+          <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3" stroke-opacity="0.4"/>
+          <path d="M50 16 C50 36 68 50 68 50 C68 50 50 64 50 84 C50 64 32 50 32 50 C32 50 50 36 50 16Z" fill="#899B83" fill-opacity="0.2" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 50 C36 50 50 68 50 68 C50 68 64 50 84 50 C64 50 50 32 50 32 C50 32 36 50 16 50Z" fill="#D5C19B" fill-opacity="0.2" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="6" fill="#34483B"/>
+        </svg>
+        <div class="brand-info">
+          <span class="brand-title">WELLNESS CENTER</span>
+          <span class="brand-tagline">Restore Balance. Reconnect With Yourself.</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="wellness-services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm header-cta">Book Appointment</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="wellness-services.html" class="mobile-nav-link">Services</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+    <div style="margin-top: 2rem;">
+      <a href="booking.html" class="btn btn-primary" style="width: 100%;">Book an Appointment</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="section section--tinted">
+      <div class="container">
+        <div class="section-header section-header--center reveal-item">
+          <span class="eyebrow">Visual Sanctuary</span>
+          <h1>Gallery of Our Wellness Space</h1>
+          <p class="lead">
+            Experience the architectural calm, tactile natural materials, and quiet light that define our holistic center. Click any image to open the full lightbox preview.
+          </p>
+        </div>
+
+        <div class="reveal-item">
+          <div class="placeholder-img ratio-21-9" style="max-height: 480px;" data-filename="gallery-hero.jpeg">
+            <img src="images/gallery-hero.jpeg" alt="Expansive view of wellness center interior with slate stone floors and courtyard greenery" onerror="this.style.display='none';">
+            <div class="placeholder-overlay">
+              <span class="placeholder-badge">Gallery Hero Image</span>
+              <code class="placeholder-filename">gallery-hero.jpeg</code>
+              <span class="placeholder-dimensions">21:9 or 16:9 • 1920 × 820 px</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY CATEGORY FILTER BUTTONS -->
+    <section class="section" style="padding-top: 3rem;">
+      <div class="container">
+        
+        <div class="filter-bar reveal-item" style="justify-content: center; margin-bottom: 2.5rem;">
+          <button type="button" class="filter-btn gallery-filter-btn active" data-category="all">All Photos</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="space">Wellness Space</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="yoga">Yoga Activities</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="meditation">Meditation</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="fitness">Fitness & Movement</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="nutrition">Nutrition</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="relaxation">Relaxation</button>
+          <button type="button" class="filter-btn gallery-filter-btn" data-category="workshops">Workshops</button>
+        </div>
+
+        <!-- RESPONSIVE GALLERY GRID -->
+        <div class="grid grid-3 gallery-grid reveal-item">
+
+          <!-- 1. Space 01 (Landscape 16:9) -->
+          <div class="gallery-item" data-category="space" data-title="Quiet Tea Lounge & Garden View" data-filename="gallery-space-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-16-9">
+              <img src="images/gallery-space-01.jpeg" alt="Quiet Tea Lounge & Garden View" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Wellness Space</span>
+                <code class="placeholder-filename">gallery-space-01.jpeg</code>
+                <span class="placeholder-dimensions">Landscape 16:9</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Quiet Tea Lounge</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Wellness Space</span>
+            </div>
+          </div>
+
+          <!-- 2. Yoga 01 (Portrait 4:5) -->
+          <div class="gallery-item" data-category="yoga" data-title="Morning Sun Salutation in Sunlit Studio" data-filename="gallery-yoga-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-4-5">
+              <img src="images/gallery-yoga-01.jpeg" alt="Morning Sun Salutation in Sunlit Studio" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Yoga Activities</span>
+                <code class="placeholder-filename">gallery-yoga-01.jpeg</code>
+                <span class="placeholder-dimensions">Portrait 4:5</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Morning Alignment Flow</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Yoga Activities</span>
+            </div>
+          </div>
+
+          <!-- 3. Meditation 01 (Square 1:1) -->
+          <div class="gallery-item" data-category="meditation" data-title="Communal Meditation on Tatami Mats" data-filename="gallery-meditation-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-1-1">
+              <img src="images/gallery-meditation-01.jpeg" alt="Communal Meditation on Tatami Mats" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Meditation</span>
+                <code class="placeholder-filename">gallery-meditation-01.jpeg</code>
+                <span class="placeholder-dimensions">Square 1:1</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Communal Stillness Sits</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Meditation</span>
+            </div>
+          </div>
+
+          <!-- 4. Fitness 01 (Landscape 4:3) -->
+          <div class="gallery-item" data-category="fitness" data-title="Functional Movement Conditioning Class" data-filename="gallery-fitness-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-4-3">
+              <img src="images/gallery-fitness-01.jpeg" alt="Functional Movement Conditioning Class" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Fitness</span>
+                <code class="placeholder-filename">gallery-fitness-01.jpeg</code>
+                <span class="placeholder-dimensions">Landscape 4:3</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Functional Mobility Studio</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Fitness & Movement</span>
+            </div>
+          </div>
+
+          <!-- 5. Nutrition 01 (Square 1:1) -->
+          <div class="gallery-item" data-category="nutrition" data-title="Whole Organic Produce & Mindful Kitchen Setup" data-filename="gallery-nutrition-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-1-1">
+              <img src="images/gallery-nutrition-01.jpeg" alt="Whole Organic Produce & Mindful Kitchen Setup" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Nutrition</span>
+                <code class="placeholder-filename">gallery-nutrition-01.jpeg</code>
+                <span class="placeholder-dimensions">Square 1:1</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Plant-Forward Ingredients</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Nutrition</span>
+            </div>
+          </div>
+
+          <!-- 6. Relaxation 01 (Landscape 16:9) -->
+          <div class="gallery-item" data-category="relaxation" data-title="Warm Stone & Herbal Compress Therapy Room" data-filename="gallery-relaxation-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-16-9">
+              <img src="images/gallery-relaxation-01.jpeg" alt="Warm Stone & Herbal Compress Therapy Room" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Relaxation</span>
+                <code class="placeholder-filename">gallery-relaxation-01.jpeg</code>
+                <span class="placeholder-dimensions">Landscape 16:9</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Herbal Compress Treatment Room</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Relaxation</span>
+            </div>
+          </div>
+
+          <!-- 7. Workshops 01 (Landscape 4:3) -->
+          <div class="gallery-item" data-category="workshops" data-title="Interactive Mindful Living Weekend Seminar" data-filename="gallery-workshops-01.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-4-3">
+              <img src="images/gallery-workshops-01.jpeg" alt="Interactive Mindful Living Weekend Seminar" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Workshops</span>
+                <code class="placeholder-filename">gallery-workshops-01.jpeg</code>
+                <span class="placeholder-dimensions">Landscape 4:3</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Educational Masterclasses</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Workshops</span>
+            </div>
+          </div>
+
+          <!-- 8. Space 02 (Portrait 4:5) -->
+          <div class="gallery-item" data-category="space" data-title="Bamboo Courtyard Meditation Pathway" data-filename="gallery-space-02.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-4-5">
+              <img src="images/gallery-space-02.jpeg" alt="Bamboo Courtyard Meditation Pathway" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Wellness Space</span>
+                <code class="placeholder-filename">gallery-space-02.jpeg</code>
+                <span class="placeholder-dimensions">Portrait 4:5</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Bamboo Courtyard Pathway</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Wellness Space</span>
+            </div>
+          </div>
+
+          <!-- 9. Yoga 02 (Square 1:1) -->
+          <div class="gallery-item" data-category="yoga" data-title="Restorative Prop-Supported Reclined Posture" data-filename="gallery-yoga-02.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-1-1">
+              <img src="images/gallery-yoga-02.jpeg" alt="Restorative Prop-Supported Reclined Posture" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Yoga Activities</span>
+                <code class="placeholder-filename">gallery-yoga-02.jpeg</code>
+                <span class="placeholder-dimensions">Square 1:1</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Restorative Bolster Session</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Yoga Activities</span>
+            </div>
+          </div>
+
+          <!-- 10. Meditation 02 (Landscape 16:9) -->
+          <div class="gallery-item" data-category="meditation" data-title="Tibetan Singing Bowl Sound Therapy Session" data-filename="gallery-meditation-02.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-16-9">
+              <img src="images/gallery-meditation-02.jpeg" alt="Tibetan Singing Bowl Sound Therapy Session" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Meditation</span>
+                <code class="placeholder-filename">gallery-meditation-02.jpeg</code>
+                <span class="placeholder-dimensions">Landscape 16:9</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Sound Frequency Meditation</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Meditation</span>
+            </div>
+          </div>
+
+          <!-- 11. Nutrition 02 (Landscape 4:3) -->
+          <div class="gallery-item" data-category="nutrition" data-title="Herbal Infusions & Botanical Tea Ceremony" data-filename="gallery-nutrition-02.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-4-3">
+              <img src="images/gallery-nutrition-02.jpeg" alt="Herbal Infusions & Botanical Tea Ceremony" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Nutrition</span>
+                <code class="placeholder-filename">gallery-nutrition-02.jpeg</code>
+                <span class="placeholder-dimensions">Landscape 4:3</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Botanical Infusion Rituals</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Nutrition</span>
+            </div>
+          </div>
+
+          <!-- 12. Relaxation 02 (Portrait 4:5) -->
+          <div class="gallery-item" data-category="relaxation" data-title="Aromatherapy Essential Oil Blending" data-filename="gallery-relaxation-02.jpeg" style="cursor: pointer;">
+            <div class="placeholder-img ratio-4-5">
+              <img src="images/gallery-relaxation-02.jpeg" alt="Aromatherapy Essential Oil Blending" onerror="this.style.display='none';">
+              <div class="placeholder-overlay">
+                <span class="placeholder-badge">Relaxation</span>
+                <code class="placeholder-filename">gallery-relaxation-02.jpeg</code>
+                <span class="placeholder-dimensions">Portrait 4:5</span>
+              </div>
+            </div>
+            <div style="padding: 0.75rem 0 0.25rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Organic Essential Oils</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-terracotta); text-transform: uppercase;">Relaxation</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL (Full interactive JS with Arrow keys & close) -->
+    <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox Modal">
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close" aria-label="Close lightbox">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <button type="button" class="lightbox-nav-btn lightbox-prev" aria-label="Previous photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <button type="button" class="lightbox-nav-btn lightbox-next" aria-label="Next photo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="lightbox-image-area">
+          <!-- Dynamic image/placeholder injected by main.js -->
+        </div>
+
+        <div class="lightbox-info">
+          <h3 class="lightbox-caption">Photo Title</h3>
+          <p class="lightbox-meta" style="margin-bottom: 0;">Category & Filename</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM CTA -->
+    <section class="section section--beige">
+      <div class="container text-center reveal-item" style="text-align: center; max-width: 760px; margin: 0 auto;">
+        <h2>Visit Us in Person</h2>
+        <p>Photographs offer just a glimpse. We warmly invite you to experience our peaceful sanctuary in person.</p>
+        <div class="btn-group" style="justify-content: center; margin-top: 1.75rem;">
+          <a href="booking.html" class="btn btn-primary">Book an Appointment</a>
+          <a href="contact.html" class="btn btn-outline">Find Our Location</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid-4" style="gap: 3rem;">
+        <div style="grid-column: span 1;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <svg class="brand-symbol" style="color: var(--accent-champagne); width: 36px; height: 36px;" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2" stroke-opacity="0.5"/>
+              <path d="M50 16 C50 36 68 50 68 50 C68 50 50 64 50 84 C50 64 32 50 32 50 C32 50 50 36 50 16Z" fill="#D5C19B" fill-opacity="0.3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="50" cy="50" r="6" fill="#D5C19B"/>
+            </svg>
+            <span style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; letter-spacing: 0.1em; color: #fff;">WELLNESS CENTER</span>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: rgba(255, 255, 255, 0.75);">
+            A sanctuary dedicated to mindful living, holistic wellness, and inner harmony. Discover a balanced approach to lifestyle, movement, and calm.
+          </p>
+          <div style="font-size: 0.8rem; font-style: italic; color: var(--accent-champagne); margin-top: 1rem;">
+            "Restore Balance. Reconnect With Yourself."
+          </div>
+        </div>
+
+        <div>
+          <h5>Explore</h5>
+          <ul class="footer-nav-list">
+            <li><a href="about.html" class="footer-nav-link">About Us</a></li>
+            <li><a href="wellness-services.html" class="footer-nav-link">Wellness Services</a></li>
+            <li><a href="wellness-programs.html" class="footer-nav-link">Curated Programs</a></li>
+            <li><a href="schedule.html" class="footer-nav-link">Class Schedule</a></li>
+            <li><a href="memberships.html" class="footer-nav-link">Memberships & Packs</a></li>
+            <li><a href="workshops.html" class="footer-nav-link">Workshops & Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Disciplines</h5>
+          <ul class="footer-nav-list">
+            <li><a href="yoga.html" class="footer-nav-link">Yoga & Movement</a></li>
+            <li><a href="meditation.html" class="footer-nav-link">Meditation & Mindfulness</a></li>
+            <li><a href="nutrition.html" class="footer-nav-link">Nutrition & Healthy Living</a></li>
+            <li><a href="fitness.html" class="footer-nav-link">Fitness & Physical Wellness</a></li>
+            <li><a href="spa-therapies.html" class="footer-nav-link">Spa Therapies</a></li>
+            <li><a href="stress-management.html" class="footer-nav-link">Stress Management</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Sanctuary Info</h5>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>0000000000 / 0000000000</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Sat: 7:00 AM – 8:00 PM<br>Sun: Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2027 WELLNESS CENTER. All rights reserved. • Illustrative demo website.
+        </div>
+        <div>
+          General wellness services do not replace medical or psychological diagnosis.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
